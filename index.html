@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kobara Secure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head-left">
+                <a href="#home" class="logo-container">
+                    <img src="img/logo.png" alt="logo" class="default-logo">
+                    <img src="img/logo2.png" alt="logo hover" class="hover-logo">
+                </a>
+                <button>
+                    <a href="#download-extension" class="btn">Extension</a>
+                </button>
+            </div>
+
+            <div class="head-right">
+                <p><a href="#about">ABOUT</a></p>
+                <p><a href="#detect">DETECT</a></p>
+                <p><a href="#history">HISTORY</a></p>
+            </div>
+        </header>
+
+        <section class="hero-section autoBlur" id="home">
+            <div class="hero-vid">
+                <video loop autoplay muted plays-inline class="hero-video">
+                    <source src="videos/NajaVidFit.mp4">
+                </video>
+
+                <div class="hero-info">
+                    <h1>Kobara.</h1>
+                    <p>Welcome lorem ipsum dolor sit amet lorem ipsum</p>
+                    <a href="#detect" class="btn">Lets Detect</a>
+                </div>
+
+                <h1 class="right-bottom">SECURE</h1>
+                <div class="next-btn">
+                    <a href="#about">NEXT</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="autoBlur">
+                <p>PRESENTING</p>
+            </div>
+            <div class="autoBlur">
+                <h1>THE MOST POWERFULL PHISHING DETECTOR</h1>
+            </div>
+            <img class="leaf-img autoBlur" src="img/leaf.png" alt="leaf-image">
+            <img class="leaf2-img autoBlur" src="img/leaf2.png" alt="leaf2-image">
+            <img class="p1-img autoBlur" src="img/p1.png" alt="p1-image">
+            <div class="autoBlur"><h3>by GEDE ANANTA PRADNYA</h3></div>
+            <div class="image-box autoTakeFull">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/nestfloat.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h4>lorem ipsum dolor sit amet ampela rendang tai kucing</h4>
+            <h5>This project came from a simple idea: I often come across suspicious links shared in group chats or emails, and I thought, "Wouldn't it be great if there was a simple app that could help people check whether a link is safe before they click on it?". That’s how I started working on this project – a web-based phishing URL detection app using Streamlit and a Random Forest machine learning model trained on phishing datasets.</h5>
+        </section>
+
+        <section class="detect-section autoBlur" id="detect">
+            <h1>DETECT</h1>
+            <h5>Here you can input a suspicious link and detect whether it's phishing or not.</h5>
+            <div class="detect-content-wrapper">
+                <div class="detect-column input-column">
+                    <h2>Input URL</h2>
+                    <input type="text" id="urlInput" placeholder="Paste your URL here...">
+                    <button id="detectButton">Detect</button>
+                </div>
+                <div class="detect-column output-column">
+                    <h2>Detection Result</h2>
+                    <div id="detectionResult">
+                        <p id="resultText" class="result-message"></p>
+                        <p id="resultLabel" class="result-label"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-section autoBlur" id="history">
+            <h1>HISTORY</h1>
+            <h5>View previous phishing detection logs here.</h5>
+            <div class="history-table-container">
+                <table id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>Tanggal Input</th>
+                            <th>Link yang Diinput</th>
+                            <th>Label Hasil</th>
+                            <th>Penjelasan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+            <button id="downloadCsvButton" class="download-button">Download CSV</button>
+        </section>
+
+        <section class="download-extension-section autoBlur" id="download-extension">
+            <h1>DOWNLOAD EXTENSION</h1>
+            <h5>Enhance your browsing security with our powerful browser extension!</h5>
+            <div class="extension-content-wrapper">
+                <p>Click the button below to download the Kobara Secure browser extension and get real-time phishing detection directly in your browser.</p>
+                <button id="downloadExtensionButton" class="download-button">Download Extension</button>
+                <div class="installation-guide">
+                    <h2>Installation Guide</h2>
+                    <ol>
+                        <li>Download the <strong>kobara_secure_extension.rar</strong> file.</li>
+                        <li>Extract the contents of the RAR file to a folder on your computer.</li>
+                        <li>Open your browser's extensions management page (e.g., `chrome://extensions` for Chrome).</li>
+                        <li>Enable "Developer mode" (usually a toggle in the top right).</li>
+                        <li>Click "Load unpacked" and select the extracted extension folder.</li>
+                        <li>The Kobara Secure extension should now be active!</li>
+                    </ol>
+                </div>
+                <p>For more details and source code, visit our GitHub repository:</p>
+                <a href="https://github.com/anan109019234/Deanshing2.0-Phishing-Detector-Chrome-Extension.git" target="_blank" class="github-link">GitHub Repository</a>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
